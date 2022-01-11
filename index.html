@@ -29,7 +29,6 @@
       <input id="input-name" type="text" placeholder="Nome">
       <input id="input-lastname" type="text" placeholder="Sobrenome">
       <input id="input-email" type="email" placeholder="Email">
-    </form>
 <!--requisito 9--> 
         <select name="house" id="house">
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -37,19 +36,22 @@
             <option value="Corvinode" id="corvinode-house">Corvinode</option>
             <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
+        
+        <hr />
 <!--requisito 12-->
         <section>
-            <p id="label-family"></p>Qual sua familia?</p>
-            <label>
-                <input type="radio" name="family" value=Frontend>Frontend
+            <h3 id="label-family">Qual sua família?</h3>
+            <label for="family">
+            <input type="radio" name="family" value="Frontend">Frontend<br>
             </label>
-            <label>
-                <input type="radio" name="family" value=Frontend>Backend
+            <label for="family">
+            <input type="radio" name="family" value="Backend">Backend<br>
             </label>
-            <label>
-                <input type="radio" name="family" value=Frontend>Fullstack 
+            <label for="family">
+            <input type="radio" name="family" value="FullStack">FullStack<br>
             </label>
         </section>
+        </form>
     </main>
 
     <script src="script.js"></script>
