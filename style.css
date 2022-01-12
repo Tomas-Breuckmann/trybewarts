@@ -8,6 +8,13 @@
   display: flex;
 }
 
+.ratio {
+  display: flex;
+  flex-direction: row;
+  align-items: row;
+}
+
+
 main {
   display: flex;
 }
