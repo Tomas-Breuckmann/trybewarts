@@ -24,3 +24,20 @@ function testaConfirmacao() {
   });
 }
 testaConfirmacao();
+
+// criterio 21
+const evaluationForm = document.getElementById('evaluation-form');
+const fName = document.getElementById('input-name');
+const fLastName= document.getElementById('input-lastname');
+function mostraFormulario(event){
+  event.preventDefault();
+  let nome = document.createElement('div')
+  nome.innerText=`Nome: ${fName.value} ${fLastName.value}`;
+  evaluationForm.appendChild(nome)
+  console.log(valor)
+}
+submit.addEventListener('click',mostraFormulario)
+
+// function verificaCheck(){
+//  alert('foi clicado')
+// }
