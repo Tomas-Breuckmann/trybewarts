@@ -111,3 +111,4 @@ function verificaCheck() {
   }
 }
 verificaCheck();
+
