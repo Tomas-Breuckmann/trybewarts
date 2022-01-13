@@ -58,7 +58,7 @@
 <!-- requisito 13 -->
       <section>
         <h3 id="label-content">Qual conteúdo você está com mais vontade de aprender?</h3>
-        <input type="checkbox" id="HoFs" name="learn" value="HoFs">HoFs
+        <input type="checkbox" id="HoFs" name="learn" value="HoFs" onclick="verificaCheck()">HoFs
         <!-- <label for="HoFs">HoFs</label> -->
         <input type="checkbox" id="Jest" name="learn" value="Jest">
         <label for="Jest">Jest</label>
@@ -87,11 +87,11 @@
         <input type="radio" name="rate" value="10">10
       </section>
 
-      <!-- requisito 15 -->
+      <!-- requisito 15 e 20 -->
       <section>
         <h3 class="textarea">Deixe seu comentário:</h3>
         <textarea id="textarea" type="textarea" name="textarea" maxlength="500"></textarea>
-        <div id="counter"></div>
+        <div id="counter">500</div>
       </section>
 
       <!-- criterio 16 -->
