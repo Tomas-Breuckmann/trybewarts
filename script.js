@@ -1,9 +1,7 @@
 const enviar = document.getElementById('submit');
-// console.log(enviar)
 function testarEmailSenha(event) {
   event.preventDefault();
   const valorEmail = document.getElementById('email').value;
-  // console.log(valorEmail)
   const valorSenha = document.getElementById('password').value;
   if (valorEmail === 'tryber@teste.com' && valorSenha === '123456') {
     alert('Olá, Tryber!');
@@ -13,12 +11,25 @@ function testarEmailSenha(event) {
 }
 enviar.addEventListener('click', testarEmailSenha);
 
-
 // requisito 20
-const counter = document.querySelector('#counter')
+const counter = document.querySelector('#counter');
 const textArea = document.querySelector('#textarea');
-textArea.addEventListener('keydown', function() {
-  const caracteres=500;
-  let add =caracteres-textArea.value.length;
-    counter.innerHTML=add
+textArea.addEventListener('keydown', () => {
+  const caracteres = 500;
+  const add = caracteres - textArea.value.length;
+  counter.innerHTML = add;
 });
+
+// criterio 18
+const mark = document.getElementById('agreement');
+const submit = document.getElementById('submit-btn');
+function testaConfirmacao() {
+  mark.addEventListener('click', () => {
+    if (mark.checked === true) {
+      submit.disabled = false;
+    } else {
+      submit.disabled = true;
+    }
+  });
+}
+testaConfirmacao();
