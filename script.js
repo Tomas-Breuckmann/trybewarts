@@ -12,3 +12,13 @@ function testarEmailSenha(event) {
   }
 }
 enviar.addEventListener('click', testarEmailSenha);
+
+
+// requisito 20
+const counter = document.querySelector('#counter')
+const textArea = document.querySelector('#textarea');
+textArea.addEventListener('keydown', function() {
+  const caracteres=500;
+  let add =caracteres-textArea.value.length;
+    counter.innerHTML=add
+});
