@@ -1,11 +1,14 @@
 .header {
   display: flex;
+  height: 80px;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .trybewarts-login {
   display: flex;
+  justify-content: space-evenly;
+  height: 80px;
 }
 
 .ratio {
@@ -34,8 +37,16 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  margin-left: 100px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.footer {
+  display: flex;
+  margin-left: 100px;
 }
