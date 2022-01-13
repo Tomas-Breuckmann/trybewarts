@@ -11,6 +11,15 @@ function testarEmailSenha(event) {
 }
 enviar.addEventListener('click', testarEmailSenha);
 
+// requisito 20
+const counter = document.querySelector('#counter');
+const textArea = document.querySelector('#textarea');
+textArea.addEventListener('keydown', () => {
+  const caracteres = 500;
+  const add = caracteres - textArea.value.length;
+  counter.innerHTML = add;
+});
+
 // criterio 18
 const mark = document.getElementById('agreement');
 const submit = document.getElementById('submit-btn');
