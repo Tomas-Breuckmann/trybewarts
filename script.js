@@ -14,10 +14,10 @@ enviar.addEventListener('click', testarEmailSenha);
 // requisito 20
 const counter = document.querySelector('#counter');
 const textArea = document.querySelector('#textarea');
-textArea.addEventListener('keydown', () => {
+textArea.addEventListener('keyup', () => {
   const caracteres = 500;
   const add = caracteres - textArea.value.length;
-  counter.innerHTML = add;
+  counter.innerText = add;
 });
 
 // criterio 18
@@ -37,15 +37,14 @@ testaConfirmacao();
 // criterio 21
 const evaluationForm = document.getElementById('evaluation-form');
 const fName = document.getElementById('input-name');
-const fLastName= document.getElementById('input-lastname');
-function mostraFormulario(event){
+const fLastName = document.getElementById('input-lastname');
+function mostraFormulario(event) {
   event.preventDefault();
-  let nome = document.createElement('div')
-  nome.innerText=`Nome: ${fName.value} ${fLastName.value}`;
-  evaluationForm.appendChild(nome)
-  console.log(valor)
+  const nome = document.createElement('div');
+  nome.innerText = `Nome: ${fName.value} ${fLastName.value}`;
+  evaluationForm.appendChild(nome);
 }
-submit.addEventListener('click',mostraFormulario)
+submit.addEventListener('click', mostraFormulario);
 
 // function verificaCheck(){
 //  alert('foi clicado')
